@@ -1,0 +1,276 @@
+# EJERCICIO 3
+
+3.a)
+<a href="http://www.google.com.ar">Click aquí para ir a Google</a>
+<a href="http://www.google.com.ar" target="_blank">Click aquí para ir a Google</a>
+<a href="http://www.google.com.ar" type="text/html" hreflang="es" charset="utf-8" rel="help">
+<a href="#">Click aquí para ir a Google</a>
+<a href="#arriba">Click aquí para volver arriba</a>
+<a name="arriba" id="arriba"></a>
+
+- Primer enlace: Enlace básico que redirecciona a Google en el mismo marco o pestaña.
+- Segundo enlace: Se añade target="_blank", lo que hace que el enlace se abra en una nueva pestaña o ventana del navegador.
+- Tercer enlace: Contiene atributos adicionales (type, hreflang, charset, rel), los cuales aportan información sobre el recurso destino, pero su funcionalidad visual no difiere notablemente del primer enlace; además, éste ejemplo puede estar incompleto si no posee contenido visible ni etiqueta de cierre con texto.
+- Cuarto enlace: El atributo href="#" genera un enlace que, al hacer clic, no redirige a otra URL (en este caso la de Google), sino que llevaría a la parte superior de la página (ya que no se especifica el nombre del ancla).
+- Quinto enlace: Usa href="#arriba", lo que vincula con un ancla interna definida en el documento (por ejemplo, la que se crea en el siguiente enlace).
+- Sexto elemento: Con name="arriba" e id="arriba", se define un punto de anclaje en el documento. Esto permite que enlaces con href="#arriba" salten a esta ubicación, como en el caso anterior, pero en definitiva no es un enlace hipervinculado propiamente dicho como los casos anteriores.
+
+3.b)
+<p><img src="im1.jpg" alt="imagen1" /><a href="http://www.google.com.ar">Click aquí</a></p>
+<p><a href="http://www.google.com.ar"><img src="im1.jpg" alt="imagen1" /></a> Click aquí</p>
+<p><a href="http://www.google.com.ar"><img src="im1.jpg" alt="imagen1" />Click aquí</a></p>
+<p><a href="http://www.google.com.ar"><img src="im1.jpg" alt="imagen1" /></a> <a href="http://www.google.com.ar">Click aquí</a></p>
+
+- Primer párrafo: La imagen y el enlace son elementos separados; la imagen no forma parte del enlace, de modo que solo “Click aquí” es clickeable.
+- Segundo párrafo: La imagen está dentro del enlace, de forma que al hacer clic sobre la imagen se redirige. Sin embargo, el texto “Click aquí” no está hipervinculado como el caso anterior.
+- Tercer párrafo: Tanto la imagen como el texto están contenidos dentro del mismo enlace; es decir, todo (imagen y texto) se comporta como un enlace.
+- Cuarto párrafo: Se presentan dos enlaces consecutivos: uno para la imagen y otro para el texto; en este caso se pueden producir comportamientos idénticos al tercer párrafo pero con áreas de clic separadas.
+
+3.c)
+<ul>   
+  <li>xxx</li>
+  <li>yyy</li>
+  <li>zzz</li>
+</ul>
+<ol>
+  <li>xxx</li>
+  <li>yyy</li>
+  <li>zzz</li>
+</ol>
+<ol>
+  <li>xxx</li>
+</ol>
+<ol>
+  <li value="2">yyy</li>
+</ol>
+<ol>
+  <li value="3">zzz</li>
+</ol>
+<blockquote>
+  <p>1. xxx<br />2. yyy<br />3. zzz</p>
+</blockquote>
+
+- Primera parte: <ul> genera una lista no ordenada (con items).
+- Segunda parte: <ol> genera una lista ordenada (numeración automática).
+- Tercera  parte: Se usan varios elementos <ol> en lugar de un solo conjunto. La utilización del atributo value en <li> permite establecer manualmente el número de inicio. Sin embargo, separar en distintos <ol> puede interrumpir la secuencia automática de numeración.
+- Cuarta parte : Se utiliza un <blockquote> de un párrafo con saltos de línea para emular una lista numerada; la presentación dependerá exclusivamente del formato de texto y no de una lista semántica.
+
+3.d)
+<table border="1" width="300">
+  <tr> 
+    <th>Columna 1</th>
+    <th>Columna 2</th>
+  </tr>
+  <tr> 
+    <td>Celda 1</td>
+    <td>Celda 2</td>
+  </tr>
+  <tr> 
+    <td>Celda 3</td>
+    <td>Celda 4</td>
+  </tr>
+</table>
+<table border="1" width="300">
+  <tr>
+    <td>
+      <div align="center"><strong>Columna 1</strong></div>
+    </td>
+    <td>
+      <div align="center"><strong>Columna 2</strong></div>
+    </td>
+  </tr>
+  <tr>
+    <td>Celda 1</td>
+    <td>Celda 2</td>
+  </tr>
+  <tr>
+    <td>Celda 3</td>
+    <td>Celda 4</td>
+  </tr>
+</table>
+
+- Primera tabla: Utiliza elementos <th> para indicar celdas de encabezado, que por defecto tienen un estilo de texto en negrita y centrado.
+- Segunda tabla: Se usan celdas normales <td> en las que se inserta un <div> con atributos de alineación y se aplica manualmente el estilo en negrita con <strong>.
+La primera opción es la más correcta al momento de manejar tablas.
+
+3.e)
+<table width="200">
+    <caption>
+        Título
+    </caption>
+    <tr>
+        <td bgcolor="#dddddd">&nbsp;</td>
+        <td bgcolor="#dddddd">&nbsp;</td>
+        <td bgcolor="#dddddd">&nbsp;</td>
+    </tr>
+    <tr>
+        <td bgcolor="#dddddd">&nbsp;</td>
+        <td bgcolor="#dddddd">
+        &nbsp;</td>
+        <td bgcolor="#dddddd">&nbsp;</td>
+    </tr>
+</table>
+<table width="200">
+    <tr>
+        <td colspan="3"><div align="center">Título</div></td>
+    </tr>
+    <tr>
+        <td bgcolor="#dddddd">&nbsp;</td>
+        <td bgcolor="#dddddd">&nbsp;</td>
+        <td bgcolor="#dddddd">&nbsp;</td>
+    </tr>
+    <tr>
+        <td bgcolor="#dddddd">&nbsp;</td>
+        <td bgcolor="#dddddd">&nbsp;</td>
+        <td bgcolor="#dddddd">&nbsp;</td>
+    </tr>
+</table>
+
+El primer fragmento utiliza la etiqueta <caption> para definir el título de la tabla dentro de la estructura misma, mientras que el segundo fragmento simula un título creando una celda que abarca varias columnas (mediante colspan="3") y colocando un <div align="center"> con el título.
+La primera opción (<caption>) es más correcta y permite a los navegadores y herramientas de accesibilidad identificar el título de la tabla. Si bien la celda con colspan permite flexibilidad en el estilo.
+
+3.f)
+<table width="200">
+    <tr>
+        <td colspan="3"><div align="center">Título</div></td>
+    </tr>
+    <tr>
+        <td rowspan="2" bgcolor="#dddddd">&nbsp;</td>
+        <td bgcolor="#dddddd">&nbsp;</td>
+        <td bgcolor="#dddddd">&nbsp;</td>
+    </tr>
+    <tr>
+        <td bgcolor="#dddddd">&nbsp;</td>
+        <td bgcolor="#dddddd">&nbsp;</td>
+    </tr>
+</table>
+<table width="200">
+    <tr>
+        <td colspan="3"><div
+        align="center">Título</div></td>
+    </tr>
+    <tr>
+        <td colspan="2"
+        bgcolor="#dddddd">&nbsp;</td>
+        <td bgcolor="#dddddd">&nbsp;</td>
+    </tr>
+    <tr>
+        <td bgcolor="#dddddd">&nbsp;</td>
+        <td bgcolor="#dddddd">&nbsp;</td>
+        <td bgcolor="#dddddd">&nbsp;</td>
+    </tr>
+</table>
+
+- Primer tabla: Utiliza rowspan="2" en una celda para abarcar dos filas y un colspan en otra parte de la tabla para abarcar varias columnas.
+- Segunda tabla: Se utiliza colspan="2" en una celda para abarcar dos columnas en una misma fila, y luego se estructura el resto de la tabla con celdas individuales.
+Ambas técnicas permiten combinar celdas, pero la forma en que se agrupan influye en la disposición y en la complejidad del diseño de la tabla.
+
+3.g)
+<table width="200" border="1">
+  <tr>
+    <td colspan="3"><div align="center">Título</div></td>
+  </tr>
+  <tr>
+    <td colspan="2" rowspan="2">&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="50%">&nbsp;</td>
+  </tr>
+</table>
+<table width="200" border="1" cellpadding="0" cellspacing="0">
+  <tr>
+    <td colspan="2"><div align="center">Título</div></td>
+  </tr>
+  <tr>
+    <td rowspan="2">&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="50%">&nbsp;</td>
+  </tr>
+</table>
+Se observa una variación en la manera de combinar celdas usando colspan y rowspan. Además, en el segundo fragmento se especifican atributos como cellpadding y cellspacing en cero, lo que afecta el espacio interno y entre celdas, generando una presentación con bordes más ajustados.
+
+3.h)
+<form id="form1" name="form1" action="procesar.php" method="post" target="_blank">
+  <fieldset>
+    <legend>LOGIN</legend>
+    Usuario: <input type="text" id="usu1" name="usu1" value="xxx" /><br />
+    Clave: <input type="password" id="clave1" name="clave1" value="xxx" />
+  </fieldset>
+  <input type="submit" id="boton1" name="boton1" value="Enviar" />
+</form>
+<form id="form2" name="form2" action="" method="get" target="_blank">
+  LOGIN<br />
+  <label>Usuario: <input type="text" id="usu2" name="usu2" /></label><br />
+  <label>Clave: <input type="text" id="clave2" name="clave2" /></label><br />
+  <input type="submit" id="boton2" name="boton2" value="Enviar" />
+</form>
+<form id="form3" name="form3" action="mailto:xx@xx.com" enctype="text/plain" method="post" target="_blank">
+  <fieldset>
+    <legend>LOGIN</legend>
+    Usuario: <input type="text" id="usu3" name="usu3" /><br />
+    Clave: <input type="password" id="clave3" name="clave3" />
+  </fieldset>
+  <input type="reset" id="boton3" name="boton3" value="Enviar" />
+</form>
+
+- Form 1: Usa el método post y envía los datos a un script PHP; emplea un <fieldset> con <legend> para agrupar de forma semántica los controles.
+- Form 2: Emplea el método get y define los controles utilizando etiquetas <label> para asociar el texto con el campo correspondiente.
+- Form 3: Utiliza mailto: en el atributo action para enviar el formulario directamente por correo electrónico y especifica enctype="text/plain"; además, usa un botón de tipo reset (aunque su texto indica “Enviar”, lo cual puede resultar confuso).
+
+3.i)
+<label>Botón 1 
+  <button type="button" name="boton1" id="boton1">
+    <img src="logo.jpg" alt="Botón con imagen" width="30" height="20" /><br />
+    <b>CLICK AQUÍ</b>
+  </button>
+</label>
+<label>Botón 2 
+  <input type="button" name="boton2" id="boton2" value="CLICK AQUÍ" />
+</label>
+
+- Botón 1: Utiliza la etiqueta <button> que permite incluir contenido HTML (como una imagen, salto de línea y etiquetas de formato). Esto permite diseñar un botón con mayor complejidad visual.
+- Botón 2: Utiliza <input type="button">, el cual muestra un botón simple que solo permite establecer un texto a través del atributo value.
+El botón con <button> permite un control más amplio en cuanto a diseño y contenidos, mientras que el <input> es más limitado.
+
+3.j)
+<p>
+  <label><input type="radio" name="opcion" id="X" value="X" />X</label><br />
+  <label><input type="radio" name="opcion" id="Y" value="Y" />Y</label>
+</p>
+<p>
+  <label><input type="radio" name="opcion1" id="X" value="X" />X</label><br />
+  <label><input type="radio" name="opcion2" id="Y" value="Y" />Y</label>
+</p>
+
+- Primer párrafo: Ambos botones de radio comparten el mismo atributo name ("opcion"), lo que hace que sean mutuamente excluyentes: sólo se puede seleccionar uno.
+- Segundo párrafo: Los botones tienen nombres diferentes (opcion1 y opcion2), por lo que pertenecen a grupos distintos y pueden seleccionarse independientemente (permitiendo elegir ambos simultáneamente).
+El atributo name determina la agrupación de botones de radio, lo cual es clave para el comportamiento de selección única.
+
+3.k)
+<select name="lista">
+  <optgroup label="Caso 1">
+    <option>Mayo</option>
+    <option>Junio</option>
+  </optgroup>
+  <optgroup label="Caso 2">
+    <option>Mayo</option>
+    <option>Junio</option>
+  </optgroup>
+</select>
+<select name="lista[]" multiple="multiple">
+  <optgroup label="Caso 1">
+    <option>Mayo</option>
+    <option>Junio</option>
+  </optgroup>
+  <optgroup label="Caso 2">
+    <option>Mayo</option>
+    <option>Junio</option>
+  </optgroup>
+</select>
+
+- Primer <select>: Permite seleccionar una sola opción de la lista (selección única).
+- Segundo <select>: El atributo multiple="multiple" permite seleccionar varias opciones simultáneamente.
+Además, se utiliza el nombre lista[] (con corchetes) para indicar, mediante convención en muchos lenguajes de procesamiento, que se espera un arreglo de valores.

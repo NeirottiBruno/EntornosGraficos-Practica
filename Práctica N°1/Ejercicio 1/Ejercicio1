@@ -1,0 +1,29 @@
+# EJERCICIO 1
+
+1) ¿Qué es HTML, cuándo fue creado, cuáles fueron las distintas versiones y cuál es la última?
+HTML (HyperText Markup Language) es el lenguaje estándar utilizado para estructurar y presentar contenido en la web. Se creó a principios de la década de los 90 por Tim Berners-Lee.
+Versiones históricas:
+- HTML 2.0: Se consolidó en 1995 como la primera especificación oficial.
+- HTML 3.2 y 4.0/4.01: Se introdujeron mejoras en el diseño, la accesibilidad y la separación entre contenido y presentación.
+- XHTML: Surgió en el cambio a una sintaxis más estricta basada en XML, pero posteriormente se abandonó en favor de HTML5.
+- HTML5: Es la versión actual, que incorpora nuevos elementos semánticos, multimedia, mejoras para aplicaciones web y mejores prácticas de accesibilidad.
+
+2) ¿Cuáles son los principios básicos que el W3C recomienda seguir para la creación de documentos con HTML?
+El World Wide Web Consortium (W3C) recomienda los siguientes principios básicos:
+- Separación de contenido y presentación: Utilizar HTML para la estructura y CSS para el estilo.
+- Accesibilidad: Estructurar el documento para que pueda ser interpretado por dispositivos de asistencia y navegadores diversos.
+- Interoperabilidad: Asegurarse de que el contenido se visualice correctamente en distintos navegadores y dispositivos.
+- Buenas prácticas semánticas: Emplear etiquetas HTML de manera coherente para reflejar la estructura lógica del contenido (por ejemplo, usar <header>, <nav>, <section>, <article>, etc. en HTML5 o bien las etiquetas tradicionales de encabezados y párrafos en versiones anteriores).
+
+3) En las Especificaciones de HTML, ¿cuándo un elemento o atributo se considera desaprobado? ¿Y obsoleto?
+- Desaprobado (deprecated): Un elemento o atributo se considera desaprobado cuando, si bien todavía puede funcionar en algunos navegadores, ya no se recomienda su uso porque existen alternativas (más estandarizadas o basadas en CSS o JavaScript) que cumplen la misma función.
+- Obsoleto: Se dice que un elemento o atributo es obsoleto cuando ha sido eliminado de la especificación actual y no se recomienda su utilización. Su uso puede ocasionar problemas de compatibilidad o que el contenido no se visualice correctamente en navegadores modernos.
+
+4) ¿Qué es el DTD y cuáles son los posibles DTDs contemplados en la especificación de HTML 4.01?
+El DTD (Document Type Definition) es un conjunto de reglas que define la estructura y las etiquetas permitidas en un documento HTML. Para HTML 4.01 se contemplan tres tipos de DTD:
+- Strict: Excluye elementos y atributos que se consideran de presentación o que han quedado en desuso, fomentando una separación clara entre el contenido y la presentación.
+- Transitional: Permite la inclusión de elementos de presentación que se han depreciado pero que aún son admitidos para facilitar la transición de documentos antiguos.
+- Frameset: Similar al Transitional, pero incluye además elementos necesarios para trabajar con marcos (frames).
+
+5) ¿Qué son los metadatos y cómo se especifican en HTML?
+Los metadatos son datos sobre el documento, es decir, información que describe sus características (como la codificación de caracteres, autor, palabras clave, descripción, fecha de expiración, etc.) y no se muestran directamente en la página. Se especifican en HTML mediante la etiqueta <meta>, la cual se coloca en la sección <head> del documento.

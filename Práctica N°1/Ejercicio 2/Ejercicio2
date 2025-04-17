@@ -1,0 +1,89 @@
+# EJERCICIO 2
+
+2.a) 
+<!-- Código controlado el día 12/08/2009 -->
+
+El código anterior se utiliza para realizar comentarios en HTML. Puede ubicarse en cualquier parte del documento HTML. No se visualiza en el navegador ya que es un comentario. No posee atributos adicionales.
+
+2.b)
+<div id="bloque1">Contenido del bloque1</div>
+
+El código anterior se coloca en el <body> del documento y crea una división (bloque) en la página que contiene el texto "Contenido del bloque1".
+Elementos y atributos:
+- Etiqueta: <div></div> (elemento de contenedor de bloque).
+- Atributo: id="bloque1" (atributo de identificación).
+
+2.c)
+<img src="" alt="lugar imagen" id="im1" name="im1" width="32" height="32" longdesc="detalles.htm" />
+
+El código anterior se coloca en el <body> para mostrar imágenes, si bien en este caso particular intenta mostrar una imagen; debido a que el atributo src está vacío, el navegador mostrará un icono de “imagen rota” o similar.
+Elementos y atributos:
+- Etiqueta: <img> (no precisa de etiqueta de cierre)
+- Atributos:
+src="" (ruta de la imagen; es obligatorio para que la imagen se cargue correctamente).
+alt="lugar imagen" (texto alternativo que se muestra si la imagen no está disponible, recomendado y obligatorio para accesibilidad).
+id="im1" y name="im1" (identificadores para fines de estilos y scripts).
+width="32" y height="32" (dimensiones de la imagen en píxeles).
+longdesc="detalles.htm" (proporciona una descripción más extensa en otro documento).
+
+2.d)
+<meta name="keywords" lang="es" content="casa, compra, venta, alquiler " />
+<meta http-equiv="expires" content="16-Sep-2019 7:49 PM" />
+
+El código anterior se deben colocar dentro de la sección <head> del documento HTML. El primer <meta> especifica palabras clave (keywords) y el idioma (mediante lang) del contenido, ayudando a los motores de búsqueda a indexar la página. El segundo <meta> indica la fecha/hora de expiración del documento.
+Elementos y atributos:
+- En el primer <meta>:
+name="keywords" (identifica el tipo de metadato).
+lang="es" (indica el idioma de los metadatos).
+content="casa, compra, venta, alquiler " (valor del metadato, en este caso, una lista de palabras clave).
+- En el segundo <meta>:
+http-equiv="expires" (simula un encabezado HTTP para indicar expiración).
+content="16-Sep-2019 7:49 PM" (valor que indica la fecha de expiración).
+
+2.e)
+<a href="http://www.e-style.com.ar/resumen.html" type="text/html" hreflang="es" charset="utf-8" rel="help">Resumen HTML </a>
+
+El código anterior se coloca en el <body> para crear un enlace visible en la página y funciona como un vínculo de “Resumen HTML” que redirige a la URL indicada.
+Elementos y atributos:
+- Etiqueta: <a></a> (elemento ancla).
+- Atributos:
+href="http://www.e-style.com.ar/resumen.html" (dirección a la que apunta el enlace; es obligatorio).
+type="text/html" (tipo MIME del recurso enlazado; opcional).
+hreflang="es" (indica el idioma del recurso destino; opcional).
+charset="utf-8" (codificación del recurso enlazado; opcional).
+rel="help" (relación que sugiere que el enlace ofrece ayuda o información adicional; opcional).
+
+2.f)
+<table width="200" summary="Datos correspondientes al ejercicio vencido">
+  <caption align="top"> Título </caption>
+  <tr>
+    <th scope="col">&nbsp;</th>
+    <th scope="col">A</th>
+    <th scope="col">B</th>
+    <th scope="col">C</th>
+  </tr>
+  <tr>
+    <th scope="row">1º</th>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <th scope="row">2º</th>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+
+Este código anterior es una tabla que simula dos filas y tres columnas, que se debe incluir en la sección <body> del documento HTML para que se visualice en la página.
+- Elementos y Atributos:
+  <table>:
+    width="200": Define el ancho de la tabla (aunque hoy en día se recomienda controlar la presentación mediante CSS).
+    summary="...": Proporciona una descripción textual del contenido de la tabla, importante para la accesibilidad.
+  <caption>:
+    Se utiliza para dar título a la tabla. El atributo align="top" posiciona el título en la parte superior de la tabla.
+  <th scope="col"> y <th scope="row">:
+    Estos atributos determinan si la celda actúa como encabezado de columna o de fila, lo que mejora la interpretación semántica y la accesibilidad.
+  <td>:
+    Define celdas estándar para datos. En este caso se usa &nbsp; para insertar un espacio, asegurando que la celda no quede completamente vacía.

@@ -1,0 +1,126 @@
+# EJERCICIO 1
+
+1) ¿Ventajas de HTML5?
+- Uso de elementos semánticos (por ejemplo <header>, <footer>, <section>, <article>) que mejoran la estructura y legibilidad del contenido.
+- Soporte nativo para contenido multimedia (audio y video) sin necesidad de complementos externos como Flash.
+- Nuevos tipos de campos de formulario (como email, number, date, etc.) y validaciones sencillas sin JavaScript.
+- APIs nativas (Canvas, Geolocalización, Local Storage, Drag & Drop, etc.) que facilitan la creación de aplicaciones web interactivas.
+
+2) ¿Por qué utilizarlo?
+Permite desarrollar sitios y aplicaciones web más completos y accesibles, con mejor rendimiento y sin instalar plugins. Al ser un estándar abierto, mejora la compatibilidad entre navegadores y dispositivos.
+
+3) Ventajas:
+- Estructura semántica clara.
+- Integración nativa de audio y video.
+- Nuevos tipos de entrada en formularios.
+- APIs útiles para desarrollo de aplicaciones.
+- Mejor accesibilidad y SEO.
+
+
+# EJERCICIO 2
+
+2.a)
+Los principales formatos de audio que HTML5 soporta (dependiendo del navegador) son:
+- MP3: El más común y ampliamente soportado.
+- WAV: Formato sin compresión (grandes tamaños de archivo).
+- OGG (Vorbis): Formato abierto y de buena calidad.
+La compatibilidad exacta depende del navegador: Chrome, Firefox, Safari, Edge, etc.
+
+2.b) 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejemplo Audio HTML5</title>
+</head>
+<body>
+  <h1>Reproduciendo Audio</h1>
+  
+  <audio controls>
+    <source src="https://html5tutorial.info/media/vincent.mp3" type="audio/mpeg">
+  </audio>
+
+</body>
+</html>
+
+
+# EJERCICIO 3
+
+3.a)
+Los formatos más habituales compatibles con la etiqueta <video> de HTML5 son:
+- MP4 (H.264/AAC): Uno de los más comunes y aceptados por la mayoría de navegadores.
+- WebM (VP8/VP9): Formato libre desarrollado por Google, muy eficiente en algunos navegadores.
+- Ogg/Theora: Formato abierto menos común pero soportado por algunos navegadores.
+La compatibilidad exacta depende del navegador: Chrome, Firefox, Safari, Edge, etc.
+
+3.b)
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejemplo Video HTML5</title>
+</head>
+<body>
+  <h1>Reproduciendo Video</h1>
+
+  <video width="480" height="320" controls>
+    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+  </video>
+
+</body>
+</html>
+
+
+# EJERCICIO 4
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formularios HTML5</title>
+</head>
+<body>
+  <h1>Formularios con Validaciones HTML5</h1>
+  
+  <!-- 4.a) Formulario con un campo requerido -->
+  <h2>4.a) Formulario con Campo Requerido</h2>
+  <form action="#" method="get">
+    <label for="nombre">Nombre (campo requerido):</label>
+    <input type="text" id="nombre" name="nombre" required>
+    <button type="submit">Enviar</button>
+  </form>
+  
+  <!-- 4.b) Formulario con un campo de tipo email -->
+  <h2>4.b) Formulario con Campo Email</h2>
+  <form action="#" method="post">
+    <label for="correo">Correo electrónico:</label>
+    <input type="email" id="correo" name="correo" placeholder="ejemplo@dominio.com" required>
+    <button type="submit">Enviar</button>
+  </form>
+  
+  <!-- 4.c) Formulario con un campo de tipo fecha -->
+  <h2>4.c) Formulario con Campo Fecha</h2>
+  <form action="#" method="post">
+    <label for="fecha">Selecciona una fecha:</label>
+    <input type="date" id="fecha" name="fecha" required>
+    <button type="submit">Enviar</button>
+  </form>
+  
+  <!-- 4.d) Formulario con un campo de tipo color -->
+  <h2>4.d) Formulario con Campo Color</h2>
+  <form action="#" method="post">
+    <label for="color">Elige un color:</label>
+    <input type="color" id="color" name="color" value="#ff0000">
+    <button type="submit">Enviar</button>
+  </form>
+  
+  <!-- 4.e) Formulario con un campo de tipo number (con min y max) -->
+  <h2>4.e) Formulario con Campo Number (Min y Max)</h2>
+  <form action="#" method="post">
+    <label for="cantidad">Ingresa un número entre 1 y 10:</label>
+    <input type="number" id="cantidad" name="cantidad" min="1" max="10" required>
+    <button type="submit">Enviar</button>
+  </form>
+  
+</body>
+</html>
